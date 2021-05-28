@@ -3,28 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet">
-    <title>Смотри какой жук</title>
+    <title>Резюме</title>
 </head>
 <body>
-    <body bgcolor= ce897b>
-    <h1>Ты посмотри какой огромный жук!</h1>
-    <div class="img">
-        <img src="jjjjj.jpg" class="img"> </div>
-    </p>
-    <br>Это жук усач. Большинство из их — жуки средней величины, но есть среди них и гиганты,</p> относящиеся к крупнейшим жукам в мире. Одним из крупнейших представителей семейства является </p> встречающийся в Южной Америке дровосек-титан (Titanus giganteus), достигающий в длину 167 мм,</p> а по некоторым неподтверждённым источникам даже до 210 мм </p>
+    <body id="body"> 
+    <h1>Резюме</h1>
+    <h2>Я огромный <span id="txt"> жук!</span> </h2>
+    <div class="divimg">
+        <img src="jjjjj.jpg" class="img"> 
+    </div>
+    <br>
+    <div class="Text_">
+        <p>Это жук усач. Большинство из их — жуки средней величины, но есть среди них и гиганты, </p>
+        <p> относящиеся к крупнейшим жукам в мире. Одним из крупнейших представителей семейства является </p>
+        <p> встречающийся в Южной Америке дровосек-титан (Titanus giganteus), достигающий в длину 167 мм,</p>
+        <p> а по некоторым неподтверждённым источникам даже до 210 мм </p>
+    </div>
     <button  type="button" onclick="BUTT()">Кайфовый жук </button>
+    <button  type="button" onclick="randColor()">Смена фона</button><br>
+    <button  type="button" onclick="Name()">Смена жука</button>
+    <input type="text" id="Name">
     <script src="script.js"></script>
     <style>
         body {
         font-family: Tahoma, serif;
+        background-color: #ce897b;
         }
         h1 {
-        color: #66cccc;
+            font-size: 180%;
+            color: #66cccc;
         }
-.img {
-    width: 50%;
-    height: 50%;
-}
+        h2{
+            font-size: 140%;
+            text-shadow: -2px 2px 0px #00e6e6,
+                 -4px 4px 0px #01cccc,
+                 -6px 6px 0px #00bdbd;
+
+        }
+        .img{
+            width: 400px;
+            height: 400px;
+        }
+        .divimg{
+            padding: 10px; 
+            border: 10px ridge #66cccc;
+            width: 400px;
+        }
+        .Text_{
+            padding: 10px; 
+            border: 20px inset #10aa5d;
+            width: 800px;
+        }
     </style>
 </body>
 </html>
